@@ -3,14 +3,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const endDateInput = document.getElementById('endDate');
 
     // Event listener for when start date is selected
-    startDateInput.addEventListener('change', function () {
+    startDateInput.addEventListener('change', function (event) {
+        event.preventDefault(); // Prevents the default action
         const startDate = this.value;
         alert(`Start Date: ${startDate}`);
         // Add any additional functionality here
     });
 
     // Event listener for when end date is selected
-    endDateInput.addEventListener('change', function () {
+    endDateInput.addEventListener('change', function (event) {
+        event.preventDefault(); // Prevents the default action
         const endDate = this.value;
         alert(`End Date: ${endDate}`);
         // Add any additional functionality here
