@@ -1,0 +1,13 @@
+/* Basic styling for the date picker container */
+.date-picker-container {
+    margin: 20px;
+    text-align: center;
+}
+
+/* Styling for the date input */
+.date-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
