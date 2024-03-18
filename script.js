@@ -1,12 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const datePicker = document.getElementById('datePicker');
+    const startDateInput = document.getElementById('startDate');
+    const endDateInput = document.getElementById('endDate');
 
-    // Event listener for when a date is selected or manually entered
-    datePicker.addEventListener('change', function () {
-        const selectedDate = this.value;
-        alert(`You selected: ${selectedDate}`); // Replace this with any action you need
-        // Here you can add any function to process the selected or entered date
+    // Event listener for when start date is selected
+    startDateInput.addEventListener('change', function () {
+        const startDate = this.value;
+        alert(`Start Date: ${startDate}`);
+        // Add any additional functionality here
     });
 
-    // Optional: Add more functionality as needed, such as validation
+    // Event listener for when end date is selected
+    endDateInput.addEventListener('change', function () {
+        const endDate = this.value;
+        alert(`End Date: ${endDate}`);
+        // Add any additional functionality here
+    });
 });
