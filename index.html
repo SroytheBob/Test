@@ -3,24 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced Task Assignment</title>
+    <title>Date Filter Table</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Task Assignment System</h1>
-        <div id="taskForm">
-            <input type="text" id="taskDescription" placeholder="Enter task description">
-            <select id="assignee">
-                <option value="">Assign to:</option>
-                <option value="John">John</option>
-                <option value="Alice">Alice</option>
-                <option value="Bob">Bob</option>
-            </select>
-            <button id="addTask">Add Task</button>
-        </div>
-        <ul id="taskList"></ul>
-    </div>
-    <script src="script.js"></script>
+
+<div>
+    <label for="filter">Filter by:</label>
+    <select id="filter">
+        <option value="all">All</option>
+        <option value="day">Day</option>
+        <option value="month">Month</option>
+        <option value="year">Year</option>
+    </select>
+    <input type="text" id="filterValue" placeholder="Enter filter value">
+    <button onclick="applyFilter()">Apply Filter</button>
+</div>
+
+<table id="dataTable">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Event</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Rows will be inserted here by JavaScript -->
+    </tbody>
+</table>
+
+<script src="script.js"></script>
 </body>
 </html>
